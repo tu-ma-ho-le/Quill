@@ -1,0 +1,133 @@
+/* 
+------- TYPOGRAPHY ------------
+FONT SIZES
+12PX / 16PX / 20PX / 24PX / 32PX / 40PX
+
+FONT WEIGHTS
+400 / 700
+
+LINE HEIGHTS
+1.2 / 1.5
+
+LETTER SPACING
+0 / -2PX
+
+FONT FAMILY
+Poppins
+
+-------- COLORS -----------
+
+PRIMARY
+BASE: #339af0 (Sky Blue)
+Tint: #d0ebff (Arctic)
+Shade: #1c7ed6 (Deep Sea)
+
+SECONDARY
+Base: #9775fa (Lavendar)
+Tint: #e5dbff (Moonlight Iris)
+Shade: #7048e8 (Velvet Night)
+
+TERTIARY
+Base: #ff922b (Pumpkin)
+Tint: #ffe8cc (Dawn)
+Shade: #f76707 (Lava)
+
+GREY
+Base: #495057 (Slate)
+Tint: #f1f3f5 (Pebble)
+Shade: #212529 (Graphite)
+
+*/
+
+/*----------------------- GLOBAL STYLES -----------------  */
+
+/* Add in universal selector later to remove default spacing properties */
+
+body {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    color: #212529;
+}
+
+h1 {
+    font-size: 62px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* -------------------- COMPONENTS (REUSABLE UI) --------------- */
+
+.btn {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-primary:link, .btn-primary:visited {
+    color: #339af0;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    color: #1c7ed6;
+}
+
+.btn-secondary:link, .btn-secondary:visited {
+    color: #9775fa;
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+    color: #7048e8;
+}
+
+/* ------------------------- SECTIONS ----------------- */
+
+/* -------- HERO SECTION ----------- */
+
+.hero-section {
+    text-align: center;
+}
+ /* ------- FEATURE SECTION ----------- */
+
+.features-main-heading {
+    text-align: center;
+}
+
+/* ---------- CTA SECTION ------------- */
+
+.cta-section {
+    text-align: center;
+}
+
+/* ------------- FOOTER -------------- */
+
+.footer {
+    text-align: center;
+}
+
