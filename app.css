@@ -36,12 +36,19 @@ GREY
 Base: #495057 (Slate)
 Tint: #f1f3f5 (Pebble)
 Shade: #212529 (Graphite)
+White: #ffffff (White)
+Black: #000000 (Black)
+
+------------ BORDER RADIUS -------------
+4px / 8px / 20px
 
 */
 
 /*----------------------- GLOBAL STYLES -----------------  */
 
-/* Add in universal selector later to remove default spacing properties */
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Poppins',sans-serif;
@@ -88,24 +95,71 @@ ul {
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
 }
 
 .btn-primary:link, .btn-primary:visited {
-    color: #339af0;
+    color: #ffffff;
+    background-color: #339af0;
+    border: 2px solid #339af0;
 }
 
 .btn-primary:hover, .btn-primary:active {
+    color: #ffffff;
+    background-color: #1c7ed6;
+    border: 2px solid #1c7ed6;
+}
+
+.btn-primary-outline:link, .btn-primary-outline:visited {
+    color: #339af0;
+    background-color: #ffffff;
+    border: 2px solid #339af0;
+}
+
+.btn-primary-outline:hover, .btn-primary-outline:active {
     color: #1c7ed6;
+    background-color: #ffffff;
+    border: 2px solid #1c7ed6;
 }
 
 .btn-secondary:link, .btn-secondary:visited {
-    color: #9775fa;
+    color: #ffffff;
+    background-color: #9775fa;
+    border: 2px solid #9775fa;
 }
 
 .btn-secondary:hover, .btn-secondary:active {
-    color: #7048e8;
+    color: #ffffff;
+    background-color: #7048e8;
+    border: #7048e8;
 }
 
+.highlight {
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.highlight-primary {
+    background-color: #339af0;
+}
+
+.highlight-secondary {
+    background-color: #9775fa;
+}
+
+.highlight-tertiary {
+    background-color: #ff922b;
+}
+
+.logo-md {
+    width: 100px;
+}
+
+.logo-sm {
+    width: 80px;
+}
 /* ------------------------- SECTIONS ----------------- */
 
 /* -------- HERO SECTION ----------- */
@@ -119,15 +173,27 @@ ul {
     text-align: center;
 }
 
+.feature-img {
+    width: 400px;
+}
+
 /* ---------- CTA SECTION ------------- */
 
-.cta-section {
+.cta-card {
     text-align: center;
+    background-color: #339af0;
+    width: 1000px;
+    padding: 100px 200px;
+    border-radius: 20px;
 }
 
 /* ------------- FOOTER -------------- */
 
 .footer {
     text-align: center;
+}
+
+.social-icons {
+    width: 20px;
 }
 
