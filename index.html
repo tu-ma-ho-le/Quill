@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="queries.css">
     <title>Quill</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
       <header>
         <!-- Navigation -->
     <nav class="navbar">
-      <a href="index.html"
+      <a class="beta" href="index.html"
         ><img class="logo-md" src="images/images/quill.svg" alt="Quill logo"
       /></a>
       <ul class="nav-btn-container">
@@ -27,7 +28,7 @@
     <!-- HERO SECTION -->
     <section class="hero-section">
       <h1 class="hero-heading">
-        <span class="highlight highlight-secondary">Mindful living</span> for the <br />
+        <span class="highlight highlight-secondary">Mindful living</span> for the <br class="hero-heading-break">
         digital world 📱
       </h1>
       <p class="hero-paragraph">
@@ -45,38 +46,28 @@
         <!-- FEATURES SECTION -->
     <section class="features-section">
       <h2 class="features-main-heading">Finally, a <span class="highlight highlight-tertiary">simple and easy</span> to use journal app</h2>
-
-      <div>
-        <h3 class="feature-heading">Write all your journals in a few clicks</h3>
-        <p>
-            Unlock the simplicity of online journaling - say goodbye to the hassle
-            of pen and paper and hello to effortless journaling with just a few
-            clicks.
-        </p>
-        <img class="feature-img"
+      <div class="features-grid-container">
+          <div>
+            <h3 class="feature-heading">Write all your journals in a few clicks</h3>
+            <p>Unlock the simplicity of online journaling - say goodbye to the hassle of pen and paper and hello to effortless journaling with just a few clicks.</p>
+          </div>
+          <img class="feature-img"
             src="images/images/features-1.png"
             alt="simple online journaling"/>
-      </div>
-      <div>
-         <h3 class="feature-heading">Beautifully displayed and neatly organised</h3>
-      <p>
-        Not just words on a screen - our journals are beautifully displayed and
-        neatly organised.
-      </p>
-      <img class="feature-img"
-        src="images/images/features-2.png"
-        alt="beautifully displayed journaling"/>
-      </div>
-      <div>
-        <h3 class="feature-heading">Create and reflect from anyywhere in the world</h3>
-      <p>
-        Whether you're at home or exploring the far corners of the world, create
-        and reflect on your experiences, thoughts, and emotions from anywhere on
-        the globe.
-      </p>
-      <img class="feature-img"
-        src="images/images/features-3.png"
-        alt="create journals anywhere"/>
+          <div>
+            <h3 class="feature-heading">Beautifully displayed and neatly organised</h3>
+            <p>Not just words on a screen - our journals are beautifully displayed and neatly organised.</p>
+          </div>
+          <img class="feature-img feature-img-swap-order"
+              src="images/images/features-2.png"
+              alt="beautifully displayed journaling"/>
+          <div>
+              <h3 class="feature-heading">Create and reflect from anyywhere in the world</h3>
+              <p>Whether you're at home or exploring the far corners of the world, create and reflect on your experiences, thoughts, and emotions from anywhere on the globe.</p>
+          </div>
+          <img class="feature-img"
+            src="images/images/features-3.png"
+            alt="create journals anywhere"/>
       </div>
     </section>
 
@@ -127,9 +118,13 @@
       <li><a href="login.html">Login</a></li>
       <li><a href="register.html">Register</a></li>
     </ul>
-    <p>Made with ♥︎ in London</p>
+    <p>Made with <span class="heart-icon">♥︎</span> in London</p>
     </footer>
   </div>
-    
+  
+  <div class="chat-container">
+    <img class="chat-icon" src="images/images/chat.svg" alt="chat icon">
+  </div>
+
   </body>
 </html>

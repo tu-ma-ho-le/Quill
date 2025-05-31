@@ -104,6 +104,7 @@ Black: #000000 (Black)
 
 html {
     font-size: 62.5%;
+    /* 10px / 16px = 62.5% */
 }
 
 body {
@@ -156,6 +157,10 @@ a {
     display: inline-block;
 }
 
+a:link, a:visited, a:hover, a:active {
+    color: var(--grey-base);
+}
+
 ul {
     list-style: none;
 }
@@ -181,36 +186,45 @@ span {
     color: var(--white);
     background-color: var(--primary-base);
     border: 2px solid var(--primary-base);
+    transition: 0.5s;
 }
 
 .btn-primary:hover, .btn-primary:active {
     color: var(--white);
     background-color: var(--primary-shade);
     border: 2px solid var(--primary-shade);
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 3px 6px 0px var(--grey-base)
 }
 
 .btn-primary-outline:link, .btn-primary-outline:visited {
     color: var(--primary-shade);
     background-color: var(--white);
     border: 2px solid var(--primary-base);
+    transition: 0.5s;
 }
 
 .btn-primary-outline:hover, .btn-primary-outline:active {
     color: var(--primary-shade);
     background-color: var(--white);
     border: 2px solid var(--primary-shade);
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 3px 6px 0px var(--grey-base)
 }
 
 .btn-secondary:link, .btn-secondary:visited {
     color: var(--white);
     background-color: var(--secondary-base);
     border: 2px solid var(--secondary-base);
+    transition: 0.5s;
 }
 
 .btn-secondary:hover, .btn-secondary:active {
     color: var(--white);
     background-color: var(--secondary-shade);
     border: var(--secondary-shade);
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 3px 6px 0px var(--grey-base);
 }
 
 .highlight {
@@ -237,6 +251,41 @@ span {
 
 .logo-sm {
     width: 80px;
+}
+
+.chat-container {
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--primary-tint);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.chat-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.beta {
+    position: relative;
+}
+
+.beta::after {
+    content: 'beta';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    background-color: var(--tertiary-base);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--white);
+    transform: translate(70%, -70%);
 }
 /* ------------------------- SECTIONS ----------------- */
 
@@ -274,6 +323,7 @@ span {
 
 .hero-paragraph {
     margin-bottom: 5rem;
+    text-align: center;
 }
 
 .hero-btn-container {
@@ -290,6 +340,20 @@ span {
 .features-main-heading {
     text-align: center;
     margin-bottom: 8rem;
+}
+
+.features-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15rem;
+    column-gap: 5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.feature-img-swap-order {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
 }
 
 .feature-headings {
@@ -319,6 +383,7 @@ span {
 
 .cta-heading {
     margin-bottom: 3rem;
+    color: var(--white);
 }
 /* ------------- FOOTER -------------- */
 
@@ -341,6 +406,10 @@ span {
 
 .social-icons {
     width: 20px;
+}
+
+.heart-icon {
+    color: var(--secondary-base);
 }
 
 
